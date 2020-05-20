@@ -9,19 +9,19 @@
 <body>
   <form action="">
     <p>
-      <label for="r">(R) verde</label>
-      <input type="range" id="r" name="r"  value="0" min="0" max="255">
+      <label for="r">(R) vermelho</label>
+      <input type="range" id="r" name="r"  value="0" step="1" min="0" max="255" onchange="updateSliders(id, value)"><span id="sr">0</span>
     </p>
     <p>
-      <label for="g">(G) vermelho</label>
-      <input type="range" id="g" name="g" value="0" min="0" max="255">
+      <label for="g">(G) verde</label>
+      <input type="range" id="g" name="g" value="0" step="1" min="0" max="255" onchange="updateSliders(id, value)"><span id="sg">0</span>
     </p>
     <p>
       <label for="r">(B) azul</label>
-      <input type="range" id="b" name="b"  value="0" min="0" max="255">  
+      <input type="range" id="b" name="b"  value="0" step="1" min="0" max="255" onchange="updateSliders(id, value)"><span id="sb">0</span>  
     </p>
   </form>
-  <div class="circle">
+  <div class="circle" id="circle">
 
   </div>
 </body>
